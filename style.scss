@@ -26,11 +26,17 @@
 --color2:#d4d4d4;
 --color3:#adadad;
 --color4:#f7f7f7;
-// $color4:#8E8E8E;
+// --color4:#8E8E8E;
 --color5:#000; 
 --color6:#404040;
 --color7:#4472c4;
 --color8:#181c35;
+--color9:#8d8d8d;
+--color10:#a9d7da;
+--color11:#707070;
+--color12:#98c1c4;
+
+
 
 
 
@@ -43,9 +49,10 @@
 
 --h1-font-size:2.1em;
 --h1-font-size-Mobile:1.9rem;
---h2-font-size:1.4rem;
+--h2-font-size:1.6rem;
 // --h3-font-size:0.8125rem;
 --h3-font-size: 1.25rem !important;
+--h4-font-size: 1.10rem !important;
 
 --normal-plus:0.9rem;
 --normal-font-size: 0.9rem;
@@ -96,10 +103,17 @@
 
 }
 
+.bloclevel1{
+margin-bottom:var(--mb-150);  
+}
 
+.bloclevel2{
+margin-bottom:var(--mb-40); 
+}
 
-
-
+.bloclevel3{
+margin-bottom:var(--mb-80); 
+}
 
 
 
@@ -121,7 +135,8 @@ h1{
     font-weight: var(--font-medium);
     margin-bottom: .5rem;
     color: var(--color5);
-    text-align: left;
+    text-align: center;
+    padding-top: 4.5rem;
 }
 
 
@@ -130,12 +145,13 @@ h2{
     font-weight: var(--font-regular);
     margin-bottom: 1rem;
     font-size: var(--h2-font-size);
-    color: var(--color7);
+    color: var(--color10);
     line-height: 2rem;
 }
 
 h2.title{
     color: var(--color3);
+    text-align: center;
 }
 
 h3{
@@ -143,10 +159,20 @@ h3{
     font-size: var(--h3-font-size);
     font-weight: var(--font-regular);
     color:var(--color8);
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
+
 }
 
+h3.unique{
+        margin-top: 3rem;
+}
 
+h4{
+        font-family: var(--title-font);
+            color:var(--color8);
+            margin-bottom: .5rem;
+                font-weight: var(--font-regular);
+}
 
 
 p, li{
@@ -161,11 +187,26 @@ p, ul{
     margin-bottom: .6rem;
 }
 
+.sous-titre{
+    color: var(--color5);
+    font-weight: var(--font-regular);
+}
 
+
+.paragraphe{
+       margin-bottom: 1.7rem;
+}
+.paragraphe p{
+       margin-bottom: 0rem;
+}
 .firstP{
     margin-top: var(--mb-50);
 }
 
+ul li:first-child{
+// border: 1px solid red;
+margin-top: 0.3rem;
+}
 
 li{
     margin-top: .5rem;
@@ -197,7 +238,7 @@ a{
 main{
     width: 100%;
     display: block;
-    margin: 4.6875rem auto 0;
+    margin: 0rem auto 0rem;
     padding: 0 2rem;
 }
 
@@ -248,6 +289,10 @@ padding-left: 0;
     font-weight: 500;
 }
 
+
+
+
+
 //--------- DEBUT IMAGES----------//
 
 img {
@@ -268,7 +313,11 @@ img {
 
 
 
-
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    // gap:2rem;
+}
 
 
 
@@ -291,6 +340,11 @@ img {
 //----- FINBUTTON 1 DE BASE -----------------------//
 
 
+.backbutton{
+    text-align: center;
+    margin-top: 2rem;
+}
+
 //----- DEBUT BUTTON THEME HEADER -----------------------//
 .buttonBack{
     background-color: var(--color5);
@@ -307,6 +361,142 @@ img {
 
 
 //===================== FIN BASE - RESET HTML ==========================================//
+
+
+
+
+
+
+
+
+
+//===================== DEBUT CASES ==========================================//
+
+.bloctext_contenaire{
+    // border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.bloctext{
+    margin-bottom: 0rem;
+}
+.bloctext p:last-child{
+    // border: 1px solid red;
+    margin-bottom: 0rem;
+}
+
+.bloctext_unit{
+display: block;
+width: 100%;
+height: auto;
+border:2px solid var(--color4);
+padding: .8rem;
+margin-bottom: .8rem;
+}
+.bloctext_unit--title{
+color:var(--color12);
+font-weight: var(--font-regular);
+margin-bottom: .3rem;
+}
+
+
+.bloctextpara_unit{
+    padding: 0rem;
+    border:none;
+}
+.bloctextpara_unit--numbertitle{
+    color:var(--color12);
+}
+.bloctextpara_unit--title{
+    color:var(--color00);
+}
+
+.portraitdescription{
+    display: flex;
+    align-items: center;
+}
+.portrait{
+    display: inline;
+    width: 35px;
+    height: 35px;
+    // border: 1Px solid red;
+    border-radius: 90%;
+
+
+}
+
+.description p{
+color:var(--color00);
+font-weight: var(--font-regular);
+margin-bottom: .3rem;
+padding-left: .4rem;
+}
+.bloccitation{
+    margin-top: 1rem;
+}
+.bloccitation_light{
+    margin-top: 0rem !important;
+}
+.bloccitation_light--description p{
+    color:var(--color12);
+}
+.citation p{
+margin-top: .2rem;
+}
+
+
+// CARRE DE RESULTATS 
+
+// .bloctextresultcards_contenaire{
+// display:flex;
+// flex-wrap: wrap;
+//     width: 100%;
+// }
+
+// .bloctextresultcards_unit{
+//     display: block;
+//     border: 1px solid red;
+//         background-color: var(--color4);
+//         width: 50%;
+//         height: auto;
+//         padding: 1rem;
+//         text-align: center;
+// }
+
+
+// .bloctextresultcards_unit--title{
+//     color:var(--color12);
+// font-weight: var(--font-regular);
+// margin-bottom: .3rem;
+// font-size: 2rem
+// }
+
+
+
+
+.panneau_contenaire{
+    width: 100%;
+    background-color: var(--color4);
+    padding: .8rem;
+    margin-bottom: .8rem;
+}
+.panneau_title{
+font-weight: var(--font-regular);
+margin-bottom: .3rem;
+}
+.panneau_contenaire p{
+    margin-bottom: 0em;
+}
+
+
+
+
+
+
+//===================== FIN CASES==========================================//
+
 
 
 
@@ -335,7 +525,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: var(--mb-70);
 }
 
 
@@ -350,14 +539,22 @@ img {
 }
 
 
+// .introduction_texte{
+//     border: 1px solid red;
+// }
+
+// .introduction_infos{
+//         border: 1px solid blue;
+// }
+
 .main__body .introduction_texte{
     width: 100%;
-    margin-bottom: var(--mb-60);
+    // margin-bottom: var(--mb-60);
     text-align: left;
 }
 .main__body .introduction_texte p{
     // border: 1px solid red;
-    margin-bottom: 1.2rem !important;
+    margin-bottom: 0rem !important;
     }
 .main__body .introduction_button{
     text-align: left;
@@ -369,11 +566,12 @@ img {
     width: 100%;
     display: flex;
     font-size: 11px;
-    margin: 0rem 0;
+    // margin: 0rem 0;
+    margin-bottom: var(--mb-50);
 }
 .main__body .introduction_infos h3{
     font-size: 13px;
-    margin-bottom: .2rem;
+    margin-bottom: .4rem;
 }
 .main__body .introduction_infos p{
     font-size: 13px;
@@ -381,10 +579,13 @@ img {
 
 
 .main__body .introduction_infos--gauche{
-    width: 50%;
+    width: 100%;
 }
 .gauche_item{
     margin-bottom: 1.2rem;
+}
+.gauche_item p{
+    line-height: .8rem !important;
 }
 .gauche_item:last-child{
     margin-bottom: 0rem;
@@ -405,6 +606,215 @@ line-height: 1.3rem;
 }
 
 /*===================== FIN INTRODUCTION=======================================================*/
+
+
+
+
+/*===================== DEBUT OVERVIEW ========================================================*/
+
+
+
+/*===================== FIN OVERVIEW ========================================================*/
+
+
+
+
+
+
+
+
+
+//========DEBUT COMPETENCES===============================//
+
+
+
+.blockcases1{
+margin-bottom: 0rem;
+}
+
+
+.competences__container {
+    row-gap: 0;
+}
+
+
+
+.competences__content {
+    margin-bottom: .8rem;
+}
+
+.competences__content.competences__close{
+    // margin-bottom:1rem ;
+    // background-color: #f7f7f7;
+    // padding: 1rem;
+}
+.competences__content.competences__open{
+    margin-bottom:.8rem ;
+}
+
+.competences__header {
+    display: flex;
+    align-items: center;
+    background-color:#f7f7f7;
+    padding: .5rem .5rem .5rem .8rem;
+    // margin-bottom: var(--mb-2);
+    cursor: pointer;
+}
+
+
+.competences__arrow {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+
+
+.competences__header--leftMobile{
+    display: none;
+}
+.competences__header--leftDesktop{
+    display: flex;
+}
+// .competences__arrow.leftDesktop {
+//     color: red !important;
+// }
+
+
+
+.blockcase {
+    font-size: 1.18rem;
+    margin-bottom: 0 !important;
+}
+
+.competences__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.competences__arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.competences__titles {
+    // display: flex;
+    // justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+
+
+.competences__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-normal);
+    // color: #8e8e8e;
+}
+
+.competences__close .competences__list {
+    height: 0;
+    overflow: hidden;
+}
+
+
+.competences__open .competences__list {
+    height: max-content;
+    // margin-bottom: var(--mb-2);
+    background-color:#f7f7f7;
+    padding: 1rem;
+}
+
+.competences__open .competences__arrow {
+    transform: rotate(-180deg);
+}
+//========FIN COMPETENCES====================================//
+
+
+
+
+
+
+/*===================== FIN OVERVIEW ========================================================*/
+
+
+
+
+/*===================== DEBUT RÉALISATION =======================================================*/
+
+
+// .blockboxflex__container{
+//         display: flex;
+//      flex-wrap: wrap;
+// }
+
+.blockboxflex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
+    
+
+.boxflex{
+// border: 1px solid blue;
+width: 310px;
+height: auto;
+display: block;
+margin-bottom: 1.2rem;
+ }
+
+ .boxflex li{
+// border: 1px solid blue;
+color:var(--color9);
+ }
+
+
+// .boxflex6, .boxflex5, .boxflex4{
+// width: 120px;
+//  }
+
+
+
+.bloc8020_contenaire{
+    // border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.bloc8020_left{
+// border: 1px solid blue;
+width: 100%;
+margin-bottom: .8rem;
+  
+}
+
+.bloc8020_right{
+    // border: 1px solid green;
+    width: 100%;
+}
+
+.bloc8020_right--item{
+margin-bottom: 1.2rem;
+}
+.bloc8020_right--item h3{
+color: var(--color11);
+font-size: 13px;
+margin-bottom: .4rem;
+}
+
+.bloc8020_right--item p{
+    line-height: .8rem !important;
+    font-size: 13px;
+    color: var(--color9);
+}
+.bloc8020_right--item:last-child{
+    margin-bottom: 0rem;
+}
+
+/*===================== FIN RÉALISATION =======================================================*/
+
+
 
 
 
@@ -806,6 +1216,42 @@ footer{
 @include sm{
 
 
+   .competences__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blockcases1{
+margin-bottom: .7rem;
+}
+
+
+
+
+//===================== DEBUT CASES ==========================================//
+
+
+.bloctext_unit{
+width: 32.5%;
+height: auto;
+}
+
+.bloctextcomment_unit{
+width: 49.3%;    
+}
+.bloctextcomment:nth-child(even){
+    margin-right: 0rem;
+
+}
+
+.bloctextpara_unit{
+width: 47%; 
+}
+
+
+//===================== FIN CASES==========================================//
+
+
+
 
 
 }
@@ -830,10 +1276,10 @@ footer{
         margin-bottom: 8rem;
     }
     .main_header h1{
-        text-align: left;
+        text-align: center;
     }
     .main_header h2{
-        text-align: left;
+        text-align: center;
         margin-bottom: var(--mb-30);
     }
 
@@ -845,10 +1291,10 @@ footer{
         }
         
     .main__body .introduction_texte{
-        width: 60%;
+        width: 80%;
         margin-top: 0rem;
         margin-bottom: 0rem;
-        padding-right: 5rem;
+        padding-left: 5rem;
     }
     .main__body .introduction_button{
         text-align: left;
@@ -860,12 +1306,11 @@ footer{
     }
         
     .main__body .introduction_infos{
-        width: 40%;
+        width: 20%;
     }
 
     .main__body .introduction_infos {
         margin: 0;
-        padding-top: 0.4rem;
     }
 
 
@@ -1017,6 +1462,17 @@ img {
 
 
 
+.bloc8020_left{
+    width: 90%;
+    padding-right: 2rem;
+}
+
+.bloc8020_right{
+    width: 10%;
+}
+
+
+
 }
 //------------ FIN MD ( > 768px) : small tablets and large smartphones (landscape view) ---------//
 
@@ -1040,7 +1496,7 @@ img {
     
 
     .main__body .introduction_texte{
-        padding-right: 10rem;
+        // padding-right: 10rem;
     }
 
     .main__body .introductionSuite_texte {
@@ -1048,10 +1504,10 @@ img {
     }
 
     .main__body .introduction_texte {
-        width: 70%;
+        width: 80%;
     }
     .main__body .introduction_infos {
-        width: 30%;
+        width: 20%;
     }
 
 
